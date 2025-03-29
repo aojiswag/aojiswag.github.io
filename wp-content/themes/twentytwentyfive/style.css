@@ -18,6 +18,36 @@ Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, feature
  * Link styles
  * https://github.com/WordPress/gutenberg/issues/42319
  */
+
+/* MOD */
+
+
+.shop-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .shop-nav {
+        display: none;
+        flex-direction: column;
+        background: #f9f4f9;
+        width: 100%;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+a:hover {
+    text-decoration: underline !important; /* 마우스를 올리면 밑줄 추가 */
+}
+
+/* MOD END */
+
+
 a {
 	text-decoration-thickness: 1px !important;
 	text-underline-offset: .1em;
